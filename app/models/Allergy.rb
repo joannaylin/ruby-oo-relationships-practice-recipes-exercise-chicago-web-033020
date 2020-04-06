@@ -7,6 +7,7 @@ class Allergy
 
   def initialize(user, ingredient)
     @user = user
+    user.all_allergies << self
     @ingredient = ingredient
     @@all << self
   end
@@ -18,4 +19,3 @@ class Allergy
 end
 
 
-# isaac (user) is allergic (allergy) to peanuts (ingredient)

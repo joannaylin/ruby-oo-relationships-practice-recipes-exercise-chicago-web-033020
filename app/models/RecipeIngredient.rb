@@ -9,6 +9,7 @@ class RecipeIngredient
   def initialize(ingredient, recipe)
     @ingredient = ingredient
     @recipe = recipe
+    self.class.all << self
   end
 
   def self.all

@@ -20,17 +20,17 @@ We've provided you with a console that you can use to test your code. To enter a
 ### `Recipe`
 Build the following methods on the Recipe class
 
-- ✅ `Recipe.all` 
+-✅ `Recipe.all` 
 should return all of the recipe instances
-- `Recipe.most_popular`
+-✅ `Recipe.most_popular`
 should return the recipe instance with the highest number of users (the recipe that has the most recipe cards)
-- `Recipe#users`
+-✅ `Recipe#users`
 should return the user instances who have recipe cards with this recipe
-- `Recipe#ingredients`
+-✅ `Recipe#ingredients`
 should return all of the ingredients in this recipe
 - `Recipe#allergens`
 should return all of the `Ingredient`s in this recipe that are allergens for `User`s in our system.
-- `Recipe#add_ingredients`
+-✅ `Recipe#add_ingredients`
 should take an array of ingredient instances as an argument, and associate each of those ingredients with this recipe
 
 ### `Allergy`
@@ -61,13 +61,13 @@ should return the recipe most recently added to the user's cookbook.
 A RecipeCard is the join between a user instance and a recipe instance.  This is a has-many-through relationship.
 Build the following methods on the RecipeCard class:  
 
-- `RecipeCard.all`
+-✅ `RecipeCard.all`
 should return all of the RecipeCard instances
-- `RecipeCard#date`
+-✅ `RecipeCard#date`
 should return the date of the entry
-- `RecipeCard#rating`
+-✅ `RecipeCard#rating`
 should return the rating (an integer) a user has given their entry
-- `RecipeCard#user`
+-✅ `RecipeCard#user`
 should return the user to which the entry belongs
 - `RecipeCard#recipe`
 should return the recipe to which the entry belongs
@@ -75,9 +75,9 @@ should return the recipe to which the entry belongs
 ### `Ingredient`
 Build the following methods on the Ingredient class
 
-- `Ingredient.all`
+-✅ `Ingredient.all`
 should return all of the ingredient instances
-- `Ingredient.most_common_allergen`
+-✅ `Ingredient.most_common_allergen`
 should return the ingredient instance that the highest number of users are allergic to
 
 

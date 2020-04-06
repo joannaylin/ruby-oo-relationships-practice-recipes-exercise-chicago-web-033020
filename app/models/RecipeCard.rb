@@ -9,6 +9,7 @@ class RecipeCard
     @date = date
     @rating = rating.to_i
     @user = user
+    user.all_recipe_cards << self # this pushes or shovels into the @all_recipe_cards
     @recipe = recipe
     @@all << self
   end
@@ -16,5 +17,7 @@ class RecipeCard
   def self.all
     @all
   end
+
+
 
 end

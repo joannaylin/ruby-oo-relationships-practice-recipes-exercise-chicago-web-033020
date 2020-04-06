@@ -22,15 +22,15 @@ class User
     @@all_recipe_cards.each do |recipe_card|
       recipe_from_rc << recipe_card.recipe
     end
-    p recipes_from_rc
+    recipes_from_rc
   end
 
   def add_recipe_card(date, rating, recipe)
-    @all_recipe_cards << RecipeCard.new(date, rating, self, recipe)
+    RecipeCard.new(date, rating, self, recipe)
   end
 
   def declare_allergy(ingredient)
-    @all_allergies << Allergy.new(self, ingredient)
+    Allergy.new(self, ingredient)
   end
 
   def allergens
